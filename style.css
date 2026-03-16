@@ -1,0 +1,300 @@
+body{
+
+margin:0;
+padding:0;
+
+font-family: Arial, sans-serif;
+text-align:center;
+color:white;
+
+/* Background Image */
+
+background-image: url("background.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+height:100vh;
+
+}
+
+/* INTRO SECTION */
+
+.intro{
+
+position: relative;
+top: 500px;
+
+}
+
+/* BUTTON STYLE */
+
+button{
+
+padding:15px 30px;
+font-size:20px;
+background:#ff4081;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+/* VIDEO STYLE */
+
+video{
+
+width:400px;
+border-radius:15px;
+margin-top:30px;
+
+}
+
+/* HIDDEN CLASS */
+
+.hidden{
+
+display:none;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+margin-top:40px;
+
+}
+
+.gallery img{
+
+width:250px;
+margin:10px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+
+}
+
+/* MESSAGE */
+
+.message{
+
+font-size:20px;
+margin-top:40px;
+
+}
+
+/* BLUR BACKGROUND */
+
+.blur-bg::before{
+
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background-image: url("background.jpg");
+background-size: cover;
+background-position: center;
+
+filter: blur(8px);
+
+z-index:-1;
+
+}
+
+/* END PAGE */
+
+#endPage{
+
+display:none;
+text-align:center;
+position:relative;
+top:200px;
+
+}
+
+/* GLOW TEXT */
+
+.endText{
+
+font-size:60px;
+color:#ff4da6;
+animation: glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px pink;
+}
+
+to{
+text-shadow:0 0 30px red;
+}
+
+}
+
+/* BALLOONS */
+
+.balloons{
+
+position:fixed;
+bottom:-100px;
+left:50%;
+font-size:40px;
+animation: fly 5s linear infinite;
+
+}
+
+@keyframes fly{
+
+0%{
+transform:translate(-50%,0);
+}
+
+100%{
+transform:translate(-50%,-900px);
+}
+
+}
+
+/* MORE BALLOONS */
+
+.balloons{
+
+position:fixed;
+bottom:-100px;
+left:50%;
+font-size:45px;
+animation: fly 6s linear infinite;
+
+}
+
+/* ANIMALS FLOAT */
+
+.animals{
+
+position:fixed;
+bottom:-120px;
+left:20%;
+font-size:50px;
+animation: animalFly 8s linear infinite;
+
+}
+
+@keyframes animalFly{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-1000px);
+}
+
+}
+
+/* BALLOONS */
+
+.balloon{
+
+position:fixed;
+bottom:-100px;
+font-size:40px;
+animation: rise 8s linear infinite;
+
+}
+
+/* HEARTS */
+
+.heart{
+
+position:fixed;
+bottom:-120px;
+font-size:35px;
+animation: rise 10s linear infinite;
+
+}
+
+/* RISING ANIMATION */
+
+@keyframes rise{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-1100px);
+}
+
+}
+
+/* BALLOON POSITIONS */
+
+.b1{ left:5%; animation-duration:7s; }
+.b2{ left:20%; animation-duration:9s; }
+.b3{ left:35%; animation-duration:6s; }
+.b4{ left:50%; animation-duration:8s; }
+.b5{ left:70%; animation-duration:7s; }
+.b6{ left:90%; animation-duration:9s; }
+
+/* HEART POSITIONS */
+
+.h1{ left:10%; animation-duration:8s; }
+.h2{ left:25%; animation-duration:10s; }
+.h3{ left:40%; animation-duration:7s; }
+.h4{ left:60%; animation-duration:9s; }
+.h5{ left:75%; animation-duration:8s; }
+.h6{ left:85%; animation-duration:10s; }
+
+.finalMessage{
+
+margin-top:40px;
+font-size:20px;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+line-height:1.8;
+
+color:#fff;
+
+background:rgba(0,0,0,0.4);
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0px 0px 20px pink;
+
+animation: fadeIn 3s ease;
+
+}
+
+.finalMessage h2{
+
+color:#ff66cc;
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
